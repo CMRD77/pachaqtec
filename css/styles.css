@@ -1,0 +1,71 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.backgroundApp{
+    background:linear-gradient(rgb(8, 146, 89) 35%, rgb(168, 167, 167) 35%);
+    display: flex;
+    height: 100vh;
+}
+
+.containerApp{
+    width: 100vw;
+    display: grid;
+    grid-template: 20px 1fr 20px / 10% 25% 1fr 10%;
+}
+.colLeft{
+    background-color:#e2e2e2;
+    grid-column: 2/3;
+    grid-row:2/3;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+
+.idItem{
+    height: 70px;
+    background-color:#ffffff;
+    border-bottom:solid 1px #e2e2e2;
+    display: grid;
+    grid-template:1fr/70px 1fr;
+}
+.idThumb{
+    width: 50px;
+    padding: 10px;
+}
+.imgAppId{
+    border-radius: 50px;
+}
+.idText{
+    grid-area: 1/2/2/3;
+    padding: 15px;
+}
+
+
+.colRight{
+    background-color:green;
+    grid-column:3/4;
+    grid-row:2/3;
+    display: grid;
+    grid-template:70px 1fr 70px /1fr ;
+}
+.topData, .bottomData{
+    background-color: #e7e3e3;
+
+}
+
+.mainBody{
+    background: url("https://i.pinimg.com/564x/7b/1d/8e/7b1d8e865da2c11b788a21a0fb51d542.jpg");
+}
+
+.namesComplete{
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.tagLine{
+    font-weight: 100;
+    font-size: 0.8em;   
+}
